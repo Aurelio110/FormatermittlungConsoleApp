@@ -46,7 +46,7 @@ namespace FormatermittlungConsoleApp
             foreach (var item in data)
             {
 
-                if (item.heightInMM - userFormatHeight > 0 && item.widthInMM - userFormatWidth > 0 && item.heightInMM - userFormatWidth > 0 && item.widthInMM - userFormatHeight > 0)
+                if (item.heightInMM - userFormatHeight > 0 && item.widthInMM - userFormatWidth > 0)
                 {
                     diffSquareMM = (item.heightInMM * item.widthInMM) - (userFormatHeight * userFormatWidth);
                     Format format = new Format(diffSquareMM, item);
